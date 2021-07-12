@@ -12,37 +12,33 @@ import ProfileIcon from './Assets/profile.png'
 import SettingsIcon from './Assets/settings.png'
 import UsersIcon from './Assets/users.png'
 
-
-
 const Tab = createBottomTabNavigator()
 
 const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-
         <Tab.Screen
           name="Profile"
           component={ProfileScreen}
           options={{
-            tabBarIcon: () => <Image source={ProfileIcon} style={{ width: 30, height: 30 }} />
+            tabBarIcon: () => <Image source={ProfileIcon} style={{ width: 25, height: 25, }} />
           }}
         />
         <Tab.Screen
           name="Users"
           component={UsersScreen}
           options={{
-            tabBarIcon: () => <Image source={UsersIcon} style={{ width: 30, height: 30 }} />
+            tabBarIcon: () => <Image source={UsersIcon} style={{ width: 25, height: 25 }} />
           }}
         />
         <Tab.Screen
           name="Settings"
           component={SettingsScreen}
           options={{
-            tabBarIcon: () => <Image source={SettingsIcon} style={{ width: 30, height: 30 }} />
+            tabBarIcon: () => <Image source={SettingsIcon} style={{ width: 25, height: 25 }} />
           }}
         />
-
       </Tab.Navigator>
     </NavigationContainer>
   )
